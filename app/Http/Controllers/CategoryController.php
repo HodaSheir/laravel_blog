@@ -9,6 +9,10 @@ use Session;
 
 class CategoryController extends Controller {
 
+    public function _construct(){
+        $this->middleware('auth');
+        $this->middleware('admin');
+    }
     public function index() {
         $categories = Category::all();
         return view('category.main')->with('categories', $categories);
@@ -30,7 +34,6 @@ class CategoryController extends Controller {
         // create category
         $category = new Category();
         $category->name = $request['name'];
-//        $category->name = $request->name;
         $category->save();
 
         Session::flash('category_create', 'New category is created');

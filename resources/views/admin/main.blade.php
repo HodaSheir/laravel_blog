@@ -13,12 +13,12 @@
 
   <!-- Custom fonts for this template-->
   <!--<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">-->
-  {{Html::style('vendor/fontawesome-free/css/all.min.css')}}
+  {!!Html::style('vendor/fontawesome-free/css/all.min.css')!!}
   <!--<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">-->
-  {{Html::style('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i')}}
+  {!!Html::style('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i')!!}
   <!-- Custom styles for this template-->
   <!--<link href="css/sb-admin-2.min.css" rel="stylesheet">-->
-  {{Html::style('css/sb-admin-2.min.css')}}
+  {!!Html::style('css/sb-admin-2.min.css')!!}
 
 </head>
 
@@ -96,8 +96,8 @@
         <div id="collapsPosts" class="collapse" aria-labelledby="headingPosts" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <!--<h6 class="collapse-header">Custom Utilities:</h6>-->
-            <a class="collapse-item" href="utilities-color.html">Create post</a>
-            <a class="collapse-item" href="utilities-border.html">View all posts</a>
+            <a class="collapse-item" href="/post/create">Create post</a>
+            <a class="collapse-item" href="/post">View all posts</a>
 <!--            <a class="collapse-item" href="utilities-animation.html">Animations</a>
             <a class="collapse-item" href="utilities-other.html">Other</a>-->
           </div>
@@ -400,17 +400,17 @@
 
   <!-- Bootstrap core JavaScript-->
   <!--<script src="vendor/jquery/jquery.min.js"></script>-->
-  {{Html::script('vendor/jquery/jquery.min.js')}}
+  {!!Html::script('vendor/jquery/jquery.min.js')!!}
   <!--<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
-  {{Html::script('vendor/bootstrap/js/bootstrap.bundle.min.js')}}
+  {!!Html::script('vendor/bootstrap/js/bootstrap.bundle.min.js')!!}
 
   <!-- Core plugin JavaScript-->
   <!--<script src="vendor/jquery-easing/jquery.easing.min.js"></script>-->
-  {{Html::script('vendor/jquery-easing/jquery.easing.min.js')}}
+  {!!Html::script('vendor/jquery-easing/jquery.easing.min.js')!!}
 
   <!-- Custom scripts for all pages-->
   <!--<script src="js/sb-admin-2.min.js"></script>-->
-  {{Html::script('js/sb-admin-2.min.js')}}
+  {!!Html::script('js/sb-admin-2.min.js')!!}
 
 </body>
 

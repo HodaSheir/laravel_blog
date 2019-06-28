@@ -11,7 +11,13 @@ class Category extends Model
         'name',
     ];
     
-    public function category(){
-        return $this->hasMany('post');
+//    public function Posts(){
+//        return $this->hasMany('post');
+//    }
+    
+    public function Posts()
+    {
+        return $this->hasMany('App\Post');
     }
+    
 }
