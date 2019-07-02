@@ -34,7 +34,7 @@
 
                         <!-- Branding Image -->
                         <a class="navbar-brand" href="{{ url('/') }}">
-                            {{ config('app.name', 'Laravel') }}
+                            {{ config('app.name', 'Laravel Blog') }}
                         </a>
                     </div>
 
@@ -60,16 +60,13 @@
                                     @if(Auth::user()->admin ==1 )
                                     <li> 
                                         
-                                        <a href="{{ url('user') }}"   
-                                           onclick="event.preventDefault();
-                                                   document.getElementById('logout-form').submit();">
+                                        <a href="{{ url('/user') }}">
                                             Admin
                                         </a>
                                     </li>
                                     @endif
                                     <li>
-
-                                        <a href="{{ route('logout') }}"
+                                        <a href="{{ url('/logout') }}"
                                            onclick="event.preventDefault();
                                                    document.getElementById('logout-form').submit();">
                                             Logout
